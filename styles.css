@@ -207,12 +207,12 @@ button:active {
 }
 
 .btn__rainforest{
-    background-color: #CFFF4F;
-    color: #1c1d1a;
+    background-color: rgba(0,0,0,0);
+    color: white;
     margin: 1.5em 0em;
     font-size: 1.5em;
     border-radius: 100px;
-    border: 1px solid #CFFF4F;
+    border: 1px solid white;
     padding: 0.5em 1.5em;
     transition: all 200ms ease-in-out
 }
