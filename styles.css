@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+body {
+    background-color: #242424;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 80px 240px;
+    margin: 0 auto;
+}
+
+/* Nav Links */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: left;
+    padding: 0px 48px 0px 0px;
+    height: 50px;
+
+}
+
+.nav__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav__link {
+    padding: 12px 36px;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    transform: translateY(3px);
+}
+
+.donate {
+    border: 1px solid rgb(226, 52, 52);
+    background-color: rgb(226, 52, 52);
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+
+/* Header */
+#header {
+
+    background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0), rgba(12, 12, 12, 0.918)),
+        url('');
+    background-size: cover;
+    height: 1150px;
+    margin: 0;
+    background-repeat: no-repeat;
+    padding: 36px;
+
+
+}
+
+
+
+.logo {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.logo__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 90%;
+    z-index: -1;
+    object-position: center;
+    object-fit: cover;
+  }
+
+
+
+button:active {
+    transform: translateY(1px);
+}
+
+.header__image {
+    position: absolute;
+    z-index: 1;
+}
+
+.header__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 150px 24px;
+    
+    width: 40%;
+}
+
+
+.header__text {
+    display: flex;
+    width: 50%;
+    color: white;
+    position: relative;
+    text-align: left;
+    z-index: 2;
+    font-size: 8em;
+    font-weight: 600;
+    line-height: 1.5em;
+    -webkit-text-stroke-width: 1.5px;
+    text-shadow: 1px 1px 1px #000000,
+        1px 2px 1px #000000,
+        1px 3px 1px #000000,
+        1px 4px 1px #000000,
+        1px 5px 1px #000000,
+        1px 6px 1px #000000,
+        1px 7px 1px #000000,
+        1px 8px 1px #000000,
+        1px 9px 1px #000000,
+        1px 10px 1px #000000,
+        1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2),
+        1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.header__subtext {
+    margin: 24px 0px;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: left;
+}
+
+.earth__text {
+    color: rgb(171, 214, 171);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(171, 214, 171);
+}
+
+/* Call To Action Section */
+
+#cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+    height: 600px;
+    padding: 28px 250px;
+    background-color:rgb(86, 99, 86);
+    
+}
+
+.cta__header--text{
+    padding: 0px 36px;
+    color: #b8e256;
+    font-size: 5em;
+}
+
+.cta__header--bold{
+    color: black;
+    text-decoration: underline;
+}
+
+.btn__rainforest{
+    background-color: #b8e256;;
+    color: #1c1d1a;
+    margin: 24px;
+    font-size: 1.5em;
+    border-radius: 100px;
+    border: 1px solid #b8e256;
+    padding: 18px 48px;
+    transition: all 200ms ease-in-out
+}
+
+button:hover{
+    background-color: #e25656;
+    border: 1px solid #e25656;
+    color: white;
+}
+
+
+
+@media (max-width: 768px) {
+    #header {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1em;
+    }
+}

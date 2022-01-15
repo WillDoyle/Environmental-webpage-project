@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"name": "assets",
+			"path": "..\\..\\Downloads\\davidbr4gg.github.io-master\\davidbr4gg.github.io-master\\assets"
+		},
+		{
+			"name": "ePortfolio",
+			"path": "..\\ePortfolio"
+		},
+		{
+			"name": "E-commerce",
+			"path": "..\\E-commerce"
+		},
+		{
+			"name": "FES Library - CSS-20211211T072539Z-001",
+			"path": "..\\..\\Downloads\\FES Library - CSS-20211211T072539Z-001"
+		},
+		{
+			"path": "..\\Final project"
+		},
+		{
+			"path": "..\\Chatbot"
+		},
+		{
+			"path": "..\\JavaScript"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Down To Earth Design"
+	}
+}
