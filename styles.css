@@ -6,6 +6,14 @@
     box-sizing: border-box;
     color: aliceblue;
     font-family: 'Be Vietnam Pro', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+    letter-spacing: -0.1em;
+    
 }
 
 body {
@@ -17,7 +25,7 @@ body {
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    padding: 80px 240px;
+    padding: 5em 2em;
     margin: 0 auto;
 }
 
@@ -27,21 +35,23 @@ nav {
     justify-content: space-between;
     align-items: center;
     justify-content: left;
-    padding: 0px 48px 0px 0px;
+    
     height: 50px;
 
 }
 
 .nav__links {
     display: flex;
+    align-items: center;
     flex-direction: row;
+    margin: 0 auto;
     justify-content: space-evenly;
 }
 
 .nav__link {
     padding: 12px 36px;
     list-style-type: none;
-    font-size: 25px;
+    font-size: 1em;
 }
 
 a {
@@ -53,24 +63,33 @@ a:active {
 }
 
 .donate {
+    padding: 0.5em 2em;
+    display: flex;
+    align-items: center;
     border: 1px solid rgb(226, 52, 52);
     background-color: rgb(226, 52, 52);
-    border-radius: 100px;
-    font-size: 24px;
+    border-radius: 10em;
+    font-size: 1em;
+}
+
+.donate:hover{
+    background-color: #b8e256;
+    border: 1px solid #b8e256;
+    color: black;
+    transition: all 300ms ease-in-out;
 }
 
 
 /* Header */
 #header {
-
     background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0), rgba(12, 12, 12, 0.918)),
         url('');
     background-size: cover;
-    height: 1150px;
+    max-height: 1150px;
+    height: 100%;
     margin: 0;
     background-repeat: no-repeat;
-    padding: 36px;
-
+    word-wrap: break-word
 
 }
 
@@ -115,9 +134,8 @@ button:active {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin: 150px 24px;
-    
-    width: 40%;
+    margin: 2em 0em;
+    width: 80%;
 }
 
 
@@ -128,8 +146,8 @@ button:active {
     position: relative;
     text-align: left;
     z-index: 2;
-    font-size: 8em;
-    font-weight: 600;
+    font-size: 4.9em;
+    font-weight: 800;
     line-height: 1.5em;
     -webkit-text-stroke-width: 1.5px;
     text-shadow: 1px 1px 1px #000000,
@@ -149,9 +167,9 @@ button:active {
 }
 
 .header__subtext {
-    margin: 24px 0px;
+    margin: 2em 0em;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 1.5em;
     text-align: left;
 }
 
@@ -170,31 +188,32 @@ button:active {
     text-align: left;
     justify-content: center;
     align-items: flex-start;
-    height: 600px;
-    padding: 28px 250px;
-    background-color:rgb(86, 99, 86);
-    
+    height: 18em;
+    padding: 0em 0em;
+    background-color:#2B443C;
+    word-wrap: break-word;
 }
 
 .cta__header--text{
-    padding: 0px 36px;
-    color: #b8e256;
-    font-size: 5em;
+    padding: 0em;
+    color: #CFFF4F;
+    font-size: 2em;
+    font-weight: 300;
 }
 
 .cta__header--bold{
-    color: black;
+    color: #86bd9e;
     text-decoration: underline;
 }
 
 .btn__rainforest{
-    background-color: #b8e256;;
+    background-color: #CFFF4F;
     color: #1c1d1a;
-    margin: 24px;
+    margin: 1.5em 0em;
     font-size: 1.5em;
     border-radius: 100px;
-    border: 1px solid #b8e256;
-    padding: 18px 48px;
+    border: 1px solid #CFFF4F;
+    padding: 0.5em 1.5em;
     transition: all 200ms ease-in-out
 }
 
@@ -202,6 +221,52 @@ button:hover{
     background-color: #e25656;
     border: 1px solid #e25656;
     color: white;
+}
+
+/* Rainforest Section */
+
+#rainforest{
+    height: 35em;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.rainforest__header--bar{
+    display: flex;
+    align-items: center;
+    height: 10em;
+    width: 100%;
+    max-height: 100%;
+    background-color: #CFFF4F;
+}
+
+.rainforest__header--text{
+    padding: 0em 0.5em;
+    color: #2B443C;
+    letter-spacing: -0.1em;
+    font-size: 5em;
+}
+
+.rainforest__3--sections{
+    display: flex;
+    flex-direction: row;
+}
+
+.rainforest__3--slide{
+    max-width: 100%;
+    width: 100%;    
+    height: 30em;
+    background-color: #2B443C;
+    border: 1px solid black;
+    width: (100% / 3);
+}
+
+.communities{
+
+}
+
+.rainforests{
+
 }
 
 
@@ -212,8 +277,21 @@ button:hover{
     }
 }
 
+/* Small Phones */
 @media (max-width: 480px) {
     h1 {
+        font-size: 1em;
+    }
+
+    #cta{
+        height: 18em;
+    }
+    
+    .cta__header--text{
+        font-size: 1.5em;
+    }
+
+    .btn_rainforest{
         font-size: 1em;
     }
 }
