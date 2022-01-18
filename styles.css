@@ -23,20 +23,28 @@ body {
 .row{
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 2em 5em;
+}
+
+.cta__row{
+    max-width: 1800px;
+    margin: 0em 20em;
+    display: flex;
+    flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    padding: 5em 2em;
-    margin: 0 auto;
+    padding: 5em 10em;
 }
 
 /* Nav Links */
 nav {
+    padding: 5em 2em 10em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-content: left;
-    
-    height: 50px;
+    height: 3em;
 
 }
 
@@ -49,9 +57,9 @@ nav {
 }
 
 .nav__link {
-    padding: 12px 36px;
+    padding: 12px 2em;
     list-style-type: none;
-    font-size: 1em;
+    font-size: 2em;
 }
 
 a {
@@ -69,7 +77,7 @@ a:active {
     border: 1px solid rgb(226, 52, 52);
     background-color: rgb(226, 52, 52);
     border-radius: 10em;
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .donate:hover{
@@ -82,14 +90,19 @@ a:active {
 
 /* Header */
 #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
     background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0), rgba(12, 12, 12, 0.918)),
         url('');
     background-size: cover;
-    max-height: 1150px;
-    height: 100%;
+    max-height: 100em;
+    height: 70em;
     margin: 0;
     background-repeat: no-repeat;
-    word-wrap: break-word
+    flex-wrap: wrap;
 
 }
 
@@ -112,7 +125,7 @@ video {
     width: 100%;
     height: 100%;
     min-width: 100%;
-    min-height: 100%;
+    max-height: 70em;
     opacity: 90%;
     z-index: -1;
     object-position: center;
@@ -133,43 +146,25 @@ button:active {
 .header__wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    margin: 2em 0em;
-    width: 80%;
+    justify-content: space-around;
+    width: 100%;
 }
 
 
 .header__text {
-    display: flex;
-    width: 50%;
-    color: white;
-    position: relative;
+    min-width: 480px;
+    font-weight: 600;
+    font-size: 6.9em;
+
     text-align: left;
-    z-index: 2;
-    font-size: 4.9em;
-    font-weight: 800;
-    line-height: 1.5em;
-    -webkit-text-stroke-width: 1.5px;
-    text-shadow: 1px 1px 1px #000000,
-        1px 2px 1px #000000,
-        1px 3px 1px #000000,
-        1px 4px 1px #000000,
-        1px 5px 1px #000000,
-        1px 6px 1px #000000,
-        1px 7px 1px #000000,
-        1px 8px 1px #000000,
-        1px 9px 1px #000000,
-        1px 10px 1px #000000,
-        1px 18px 6px rgba(16, 16, 16, 0.4),
-        1px 22px 10px rgba(16, 16, 16, 0.2),
-        1px 25px 35px rgba(16, 16, 16, 0.2),
-        1px 30px 60px rgba(16, 16, 16, 0.4);
+
+
 }
 
 .header__subtext {
-    margin: 2em 0em;
+    min-width: 480px;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-align: left;
 }
 
@@ -188,8 +183,8 @@ button:active {
     text-align: left;
     justify-content: center;
     align-items: flex-start;
-    height: 18em;
-    padding: 0em 0em;
+    height: 40em;
+    padding: 0em 2em;
     background-color:#2B443C;
     word-wrap: break-word;
 }
@@ -197,7 +192,7 @@ button:active {
 .cta__header--text{
     padding: 0em;
     color: #CFFF4F;
-    font-size: 2em;
+    font-size: 3.5em;
     font-weight: 300;
 }
 
@@ -207,13 +202,15 @@ button:active {
 }
 
 .btn__rainforest{
+    max-width: 15em;
+    min-width: 10em;
     background-color: rgba(0,0,0,0);
     color: white;
     margin: 1.5em 0em;
     font-size: 1.5em;
     border-radius: 100px;
     border: 1px solid white;
-    padding: 0.5em 1.5em;
+    padding: 1em 1.5em;
     transition: all 200ms ease-in-out
 }
 
@@ -234,7 +231,7 @@ button:hover{
 .rainforest__header--bar{
     display: flex;
     align-items: center;
-    height: 10em;
+    height: 15em;
     width: 100%;
     max-height: 100%;
     background-color: #CFFF4F;
@@ -244,26 +241,45 @@ button:hover{
     padding: 0em 0.5em;
     color: #2B443C;
     letter-spacing: -0.1em;
-    font-size: 5em;
+    font-size: 7em;
 }
 
-.rainforest__3--sections{
+#rainforest__3--sections{
     display: flex;
     flex-direction: row;
+    background-size: cover;
+    opacity: 100%;
+    position: relative;
+    z-index: 1;
+
+}
+
+#rainforest__3--sections > div:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.communities:hover{
+    content: url('./img/communities.jpg');
+    background-size: cover;
 }
 
 .rainforest__3--slide{
     max-width: 100%;
     width: 100%;    
-    height: 30em;
-    background-color: #2B443C;
-    border: 1px solid black;
+    height: 65em;
+    background-color: rgba(0,0,0,0);
+    border-right: 0.125rem solid #fff;
     width: (100% / 3);
+    transition: all 300ms ease-in-out;
 }
 
-.communities{
 
-}
+
 
 .rainforests{
 
@@ -274,6 +290,12 @@ button:hover{
 @media (max-width: 768px) {
     #header {
         background-size: cover;
+    }
+
+    .rainforest__3--sections{
+        display: flex;
+        flex-direction: column;
+        border-right: 0.125rem solid #fff;
     }
 }
 
