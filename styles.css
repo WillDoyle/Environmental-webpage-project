@@ -254,19 +254,7 @@ button:hover{
 
 }
 
-#rainforest__3--sections > div:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
-}
 
-.communities:hover{
-    content: url('./img/communities.jpg');
-    background-size: cover;
-}
 
 .rainforest__3--slide{
     max-width: 100%;
@@ -280,6 +268,42 @@ button:hover{
 
 
 
+.rainforest__3--background{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -2;
+}
+
+.rainforest-3-background-image{
+    background-color: black;
+    flex: 0 100%;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+#rainforest-3-background-image figure{
+    opacity: 0;
+}
+
+.rainforest-3-background-image img{
+    opacity: 1;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.active{
+    opacity: 1;
+}
 
 .rainforests{
 
