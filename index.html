@@ -52,8 +52,9 @@
 
     <section id="rainforest">
         <div class="rainforest__header--bar">
-
+            <div class="row--cta">
             <h1 class="rainforest__header--text">WE HELP</h1>
+        </div>
         </div>
         <div id="rainforest__3--sections">
             <div class="rainforest__3--background">
@@ -73,14 +74,14 @@
                     <img src="./img/climate-action.webp" alt="" data-id="3">
                 </figure>
             </div>
-            <div onmouseenter="mouseEnter('communities')" onmouseleave = "mouseLeave('default-image')" class="communities rainforest__3--slide" id="communities">
-                <p>Helloo fuck shit Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia excepturi esse repudiandae voluptatem perspiciatis ipsum cumque, temporibus unde? Dolore, autem temporibus consequuntur earum error laboriosam quos magnam blanditiis saepe esse.</p>
+            <div onmouseenter="toggleVisibility('communities-image')" onmouseleave = "toggleVisibility('default-image')" class="communities rainforest__3--slide" id="communities">
+                
 
             </div>
-            <div onmouseenter="mouseEnter('rainforests')" onmouseleave = "mouseLeave('default-image')" class="rainforests rainforest__3--slide" id="rainforests">
+            <div onmouseenter="toggleVisibility('rainforest-image')" onmouseleave = "toggleVisibility('default-image')" class="rainforests rainforest__3--slide" id="rainforests">
 
             </div>
-            <div onmouseenter="mouseEnter('climate')" onmouseleave = "mouseLeave('default-image')" class="climate__action rainforest__3--slide" id="climate">
+            <div onmouseenter="toggleVisibility('climate-image')" onmouseleave = "toggleVisibility('default-image')" class="climate__action rainforest__3--slide" id="climate">
             </div>
         </div>
         </div>

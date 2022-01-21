@@ -9,47 +9,13 @@ var climateImg = document.getElementById("climate-image").innerHTML;
 //climateImg.style.opacity = "0.5";
 
 
-   function mouseEnter(caller){
-       console.log(caller);
+function toggleVisibility(id) {
+        $("figure#communities-image").css("opacity", id === "communities-image" ? 1 : 0)
+        
+        $("figure#rainforest-image").css("opacity", id === "rainforest-image" ? 1 : 0);
 
-       if(caller == "communities"){
-           $("figure#communities-image").css("opacity",1);
-           $("figure#default-image").css("opacity",0);
-           $("figure#climate-image").css("opacity",0);
-           $("figure#rainforest-image").css("opacity",0);
-       }
-       if(caller == "rainforests"){
-        $("figure#rainforest-image").css("opacity",1);
-        $("figure#communities-image").css("opacity",0);
-        $("figure#default-image").css("opacity",0);
-        $("figure#climate-image").css("opacity",0);
-       }
-        if(caller == "climate"){
-            $("figure#climate-image").css("opacity",1);
-            $("figure#communities-image").css("opacity",0);
-            $("figure#default-image").css("opacity",0);
-            $("figure#rainforest-image").css("opacity",0);
-        }
-
-        if(caller == "default-image"){
-            $("figure#default-image").css("opacity",1);
-            $("figure#communities-image").css("opacity",0);
-            $("figure#climate-image").css("opacity",0);
-            $("figure#rainforest-image").css("opacity",0);
-        }
-
+        $("figure#climate-image").css("opacity", id === "climate-image" ? 1 : 0);
     
-   }
-
-   function mouseLeave(caller){
-       if(caller == "default-image"){
-       $("figure#default-image").css("opacity",1);
-       $("figure#communities-image").css("opacity",0);
-       $("figure#rainforests-image").css("opacity",0);
-       $("figure#climate-image").css("opacity",0);
-       console.log(caller);
-       }
-       else{
-           console.log(caller);
-       }
-   }
+        $("figure#default-image").css("opacity", id === "default-image" ? 1 : 0);
+    
+}

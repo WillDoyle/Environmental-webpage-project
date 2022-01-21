@@ -21,9 +21,21 @@ body {
 }
 
 .row{
+    margin: 0 25em;
+    max-width: 1200px;
     display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    align-items: left;
+    flex-direction: column;   
+    padding: 2em 5em;
+}
+
+.row--cta{
+    margin: 0 25em;
+    max-width: 1200px;
+    display: flex;
+    align-items: left;
+    flex-direction: row;
+    white-space: nowrap;
     padding: 2em 5em;
 }
 
@@ -238,7 +250,6 @@ button:hover{
 }
 
 .rainforest__header--text{
-    padding: 0em 0.5em;
     color: #2B443C;
     letter-spacing: -0.1em;
     font-size: 7em;
@@ -253,6 +264,17 @@ button:hover{
     z-index: 1;
 }
 
+.communities:hover{
+    background-color: #FF464F;
+}
+
+.rainforests:hover{
+    background-color: #a0acf7;
+}
+
+.climate__action:hover{
+    background-color: #d3f259;
+}
 
 
 .rainforest__3--slide{
@@ -277,6 +299,8 @@ button:hover{
 }
 
 .rainforest-3-background-image{
+    transition: all 300ms ease-in-out;
+    filter: brightness(50%);
     opacity: 1;
     background-color: black;
     flex: 0 100%;
@@ -297,6 +321,9 @@ button:hover{
     -o-object-fit: cover;
     object-fit: cover;
 }
+
+
+
 
 
 
