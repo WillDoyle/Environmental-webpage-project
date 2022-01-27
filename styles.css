@@ -179,6 +179,7 @@ button:active {
 
 
 .header__text {
+    font-size: 10em;
     min-width: 480px;
     font-weight: 100;
     text-align: left;
@@ -186,17 +187,11 @@ button:active {
 
 .main-header-text {
     min-width: 480px;
-    font-size: 8em;
+    font-size: 13em;
     font-weight: 800;
     text-align: left;
 }
 
-
-
-.communities-text{
-    font-weight: 100;
-
-}
 
 .header__subtext {
     min-width: 480px;
@@ -386,7 +381,11 @@ button:hover{
 }
 
 .rainforest__3--slide h1{
-    font-size: 4em;
+    font-size: 5em;
+}
+
+.communities-text{
+    font-weight: 100;
 }
 
 .communities-para, .climate-action-para, .rainforest-para{
