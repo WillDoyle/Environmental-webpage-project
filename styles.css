@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
 
+@font-face{
+    font-family: 'CompactaBT';
+    src: url(./fonts/CompactaBT.ttf);
+}
+
+::selection{
+    color: #2B443C;
+    background: #CFFF4F
+}
 * {
     padding: 0;
     margin: 0;
@@ -7,6 +16,12 @@
     color: aliceblue;
     font-family: 'Be Vietnam Pro', sans-serif;
     scroll-behavior: smooth;
+}
+
+h1{
+    font-family: 'CompactaBT';
+    font-stretch: condensed;
+    font-weight: 800;
 }
 
 html,body{
@@ -21,7 +36,7 @@ body {
 }
 
 .row{
-    margin: 0 25em;
+    margin: 0 10em;
     max-width: 1200px;
     display: flex;
     align-items: left;
@@ -30,7 +45,7 @@ body {
 }
 
 .row--cta{
-    margin: 0 25em;
+    margin: 0 10em;
     max-width: 1200px;
     display: flex;
     align-items: left;
@@ -41,7 +56,7 @@ body {
 
 .cta__row{
     max-width: 1800px;
-    margin: 0em 20em;
+    margin: 0em 10em;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -51,7 +66,6 @@ body {
 
 /* Nav Links */
 nav {
-    padding: 5em 2em 10em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,6 +75,7 @@ nav {
 }
 
 .nav__links {
+    font-weight: 300;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -111,7 +126,7 @@ a:active {
         url('');
     background-size: cover;
     max-height: 100em;
-    height: 70em;
+    height: 60em;
     margin: 0;
     background-repeat: no-repeat;
     flex-wrap: wrap;
@@ -165,11 +180,21 @@ button:active {
 
 .header__text {
     min-width: 480px;
-    font-weight: 600;
-    font-size: 6.9em;
-
+    font-weight: 100;
     text-align: left;
+}
 
+.main-header-text {
+    min-width: 480px;
+    font-size: 8em;
+    font-weight: 800;
+    text-align: left;
+}
+
+
+
+.communities-text{
+    font-weight: 100;
 
 }
 
@@ -203,12 +228,14 @@ button:active {
 
 .cta__header--text{
     padding: 0em;
+    font-family: 'Be Vietnam Pro', san-serif;
     color: #CFFF4F;
     font-size: 3.5em;
     font-weight: 300;
 }
 
 .cta__header--bold{
+    font-family: 'Be Vietnam Pro', san-serif;
     color: #86bd9e;
     text-decoration: underline;
 }
@@ -235,10 +262,12 @@ button:hover{
 /* Rainforest Section */
 
 #rainforest{
-    height: 35em;
+    height: 80em;
     max-height: 100%;
     max-width: 100%;
+
 }
+
 
 .rainforest__header--bar{
     display: flex;
@@ -251,7 +280,6 @@ button:hover{
 
 .rainforest__header--text{
     color: #2B443C;
-    letter-spacing: -0.1em;
     font-size: 7em;
 }
 
@@ -264,20 +292,40 @@ button:hover{
     z-index: 1;
 }
 
+.rainforest__3--slide:hover .icon{
+    transform: translateY(12em) rotate(45deg);
+    transition: all 300ms ease-in-out;
+}
+
+.rainforest__3--slide .communities-para, .rainforest__3--slide .rainforest-para, .rainforest__3--slide .climate-action-para{
+    opacity: 0;
+    display: none;
+}
+
+
+
+
+
 .communities:hover{
     background-color: #FF464F;
+    width: 120vw;
 }
 
 .rainforests:hover{
     background-color: #a0acf7;
+    width: 120vw;
 }
 
 .climate__action:hover{
     background-color: #d3f259;
+    width: 120vw;
 }
 
 
 .rainforest__3--slide{
+    display: flex;
+    padding: 7em 0em 0em 3em;
+    flex-direction: column;
     max-width: 100%;
     width: 100%;    
     height: 65em;
@@ -285,6 +333,20 @@ button:hover{
     border-right: 0.25rem solid #fff;
     width: (100% / 3);
     transition: all 300ms ease-in-out;
+}
+
+.icon{
+    position: absolute;
+    top: 20%;
+    padding: 0.5em;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;  
+    transition: all 300ms ease-in-out;    
+    
 }
 
 
@@ -320,11 +382,57 @@ button:hover{
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+
+}
+
+.rainforest__3--slide h1{
+    font-size: 4em;
+}
+
+.communities-para, .climate-action-para, .rainforest-para{
+    opacity: 0;
+    transition: 300ms ease-in;
+    padding: 2em 4em 2em 0em;
+    font-size: 1.8em;
 }
 
 
+/* KEY STATS SECTION */
+
+#key-stats{
+    background-color: #2B443C;
+    height: 200em;
+}
 
 
+#updates{
+    background-color: #FDF2CD;
+    height: 200em;
+}
+
+#key-stats h1{
+    margin-top: 36px;
+    font-size: 12em;
+}
+
+@media (max-width: 999px){
+    #header{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: left;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        margin: 2em 0em;
+    }
+
+    .row{
+        padding: 0;
+        margin: 0 2em;
+
+    }
+
+}
 
 
 

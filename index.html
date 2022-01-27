@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 </head>
 
@@ -33,7 +36,8 @@
                     <source
                         src="https://player.vimeo.com/external/310129237.hd.mp4?s=3bff56fe63e902cba50bc27290b4040689c8d831&profile_id=174&oauth2_token_id=1284553582">
                 </video>
-                <h1 class="header__text">PRESERVING NATURE</h1>
+                <h1 class="main-header-text">D<span class="expand">O</span>WN TO EARTH</h1>
+          
                 <h2 class="header__subtext">A non-existent, independent charity dedicated towards improving the planet,
                     1 donation at a time.</h2>
                 <button class="btn__rainforest">Discover more</button>
@@ -53,7 +57,7 @@
     <section id="rainforest">
         <div class="rainforest__header--bar">
             <div class="row--cta">
-            <h1 class="rainforest__header--text">WE HELP</h1>
+            <h1 class="rainforest__header--text">WE BELIEVE IN</h1>
         </div>
         </div>
         <div id="rainforest__3--sections">
@@ -74,18 +78,41 @@
                     <img src="./img/climate-action.webp" alt="" data-id="3">
                 </figure>
             </div>
-            <div onmouseenter="toggleVisibility('communities-image')" onmouseleave = "toggleVisibility('default-image')" class="communities rainforest__3--slide" id="communities">
-                
+            <div onmouseenter="toggleVisibility('communities-image'), changeColor('communities-image','enter')" onmouseleave = "toggleVisibility('default-image'), changeColor('communities-image', 'leave')" class="communities rainforest__3--slide" id="communities">
+                <div class="text--wrapper">
+                <h1 class="communities-text">Communities</h1>
+                <p class="communities-para header-para">Start with people. People living in rainforest do amazing things when backed with cash that supports them, benefits rainforest, and helps fight the climate crisis.</p>
+                <i class="fas fa-angle-right fa-2x icon communities-icon"></i>
+            </div>
 
             </div>
-            <div onmouseenter="toggleVisibility('rainforest-image')" onmouseleave = "toggleVisibility('default-image')" class="rainforests rainforest__3--slide" id="rainforests">
-
+            <div onmouseenter="toggleVisibility('rainforest-image')
+             changeColor('rainforest-image','enter')" onmouseleave = "toggleVisibility('default-image'), changeColor('rainforest-image','leave')" class="rainforests rainforest__3--slide" id="rainforests">
+             <div class="text--wrapper">
+                <h1 class="rainforest-text header__text">Rainforest</h1>
+                <p class="rainforest-para header-para">Protecting tropical rainforest is a cost-effective and potent way to fight the climate crisis. All we have to do is protect it.</p>
+                <i class="fas fa-angle-right fa-2x icon rainforest-icon"></i>
             </div>
-            <div onmouseenter="toggleVisibility('climate-image')" onmouseleave = "toggleVisibility('default-image')" class="climate__action rainforest__3--slide" id="climate">
+            </div>
+            <div onmouseenter="toggleVisibility('climate-image'), changeColor('climate-image','enter')" onmouseleave = "toggleVisibility('default-image'), changeColor('climate-image','leave')" class="climate__action rainforest__3--slide" id="climate">
+                <div class="text--wrapper">    
+                <h1 class="climate-action-text header__text">Climate Action</h1>
+                <p class="climate-action-para header-para">Cooling our Earth starts with people living in rainforest. We believe supporting indigenous peoples and local communities is the key to fighting the climate crisis and securing a future for all of us.</p>
+                <i class="fas fa-angle-right fa-2x icon climate-icon"></i>
+                </div>
             </div>
         </div>
         </div>
-    
+    </section>
+
+    <section id="key-stats">
+        <div class="row">
+        <h1>KEY STATS</h1>
+    </div>
+    </section>
+
+    <section id="updates">
+     
     </section>
 
 </body>
