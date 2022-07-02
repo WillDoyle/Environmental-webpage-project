@@ -10,6 +10,17 @@ var climateImg = document.getElementById("climate-image").innerHTML;
 
 AOS.init();
 
+let observer = new IntersectionObserver(entries => {
+        console.log(entries);
+        if (entries[0].boundingClientRect.y < 0) {
+        console.log("Past 100px!");
+        } else {
+        console.log("Not past 100px");
+        }
+        });
+        observer.observe(document.querySelector("#pixel-to-watch"));
+        
+
 
 function toggleVisibility(id) {
         $("figure#communities-image").css("opacity", id === "communities-image" ? 1 : 0)
@@ -68,7 +79,13 @@ function changeColor(id, hover) {
                 
                 if(targetDiv.className !== "climate-action-text"){
                         targetIcon.style.backgroundColor = "#CFFF4F";
+                        
                 }
+
+                if(targetDiv.className == "climate-action-text header__text"){
+                        targetIcon.style.backgroundColor = "aliceblue";
+                }
+
                 
         }
 

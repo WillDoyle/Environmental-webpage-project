@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Down to Earth Design Charity</title>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
@@ -17,8 +17,8 @@
 
 <body>
     <section id="header">
-            <nav>
-                <div class="row">
+        <nav>
+            <div class="row">
 
                 <ul class="nav__links">
                     <div class="logo__wrapper">
@@ -29,15 +29,15 @@
                     <li class="nav__link"><a href="#Our_Plan">Our Plan</a></li>
                 </ul>
             </div>
-            </nav>
-            <div class="header__wrapper">
-                <div class="row">
+        </nav>
+        <div class="header__wrapper">
+            <div class="row">
                 <video width:auto height:auto autoplay muted loop>
                     <source
                         src="https://player.vimeo.com/external/310129237.hd.mp4?s=3bff56fe63e902cba50bc27290b4040689c8d831&profile_id=174&oauth2_token_id=1284553582">
                 </video>
                 <h1 class="main-header-text">D<span class="expand">O</span>WN TO EARTH</h1>
-          
+
                 <h2 class="header__subtext">A non-existent, independent charity dedicated towards improving the planet,
                     1 donation at a time.</h2>
                 <button class="btn__rainforest">Discover more</button>
@@ -48,29 +48,30 @@
     <section id="cta">
         <div class="row">
 
-        <h1 class="cta__header--text">We <span class="cta__header--bold">fight</span> to protect rainforests threatened
-            by <span class="cta__header--bold">corporate deforestation</span></h1>
-        <button class="btn__rainforest">Learn More</button>
-    </div>
+            <h2 class="cta__header--text">We <span class="cta__header--bold">fight</span> to protect rainforests
+                threatened
+                by <span class="cta__header--bold">corporate deforestation</span></h2>
+            <button class="btn__rainforest">Learn More</button>
+        </div>
     </section>
 
     <section id="rainforest">
         <div class="rainforest__header--bar">
             <div class="row--cta">
-            <h1 class="rainforest__header--text">WE BELIEVE IN</h1>
-        </div>
+                <h1 class="rainforest__header--text">WE BELIEVE IN</h1>
+            </div>
         </div>
         <div id="rainforest__3--sections">
             <div class="rainforest__3--background">
-                <figure class="rainforest-3-background-image"  id="default-image">
+                <figure class="rainforest-3-background-image" id="default-image">
                     <img src="./img/default-background.jpeg" alt="" data-id="0">
                 </figure>
 
-                <figure class="rainforest-3-background-image"  id="communities-image">
+                <figure class="rainforest-3-background-image" id="communities-image">
                     <img src="./img/communities.webp" alt="" data-id="1">
                 </figure>
 
-                <figure class="rainforest-3-background-image"  id="rainforest-image" >
+                <figure class="rainforest-3-background-image" id="rainforest-image">
                     <img src="./img/rainforest.webp" alt="" data-id="2">
                 </figure>
 
@@ -78,43 +79,129 @@
                     <img src="./img/climate-action.webp" alt="" data-id="3">
                 </figure>
             </div>
-            <div onmouseenter="toggleVisibility('communities-image'), changeColor('communities-image','enter')" onmouseleave = "toggleVisibility('default-image'), changeColor('communities-image', 'leave')" class="communities rainforest__3--slide" id="communities">
-                <div class="text--wrapper">
-                <h1 class="communities-text">Communities</h1>
-                <p class="communities-para header-para">Start with people. People living in rainforest do amazing things when backed with cash that supports them, benefits rainforest, and helps fight the climate crisis.</p>
+            <div onmouseenter="toggleVisibility('communities-image'), changeColor('communities-image','enter')"
+                onmouseleave="toggleVisibility('default-image'), changeColor('communities-image', 'leave')"
+                class="communities rainforest__3--slide" id="communities">
+
+                <h1 class="communities-text">COMMUNITIES</h1>
+                <p class="communities-para header-para">Start with people. People living in rainforest do amazing things
+                    when backed with cash that supports them, benefits rainforest, and helps fight the climate crisis.
+                </p>
                 <i class="fas fa-angle-right fa-2x icon communities-icon"></i>
-            </div>
+
 
             </div>
             <div onmouseenter="toggleVisibility('rainforest-image')
-             changeColor('rainforest-image','enter')" onmouseleave = "toggleVisibility('default-image'), changeColor('rainforest-image','leave')" class="rainforests rainforest__3--slide" id="rainforests">
-             <div class="text--wrapper">
-                <h1 class="rainforest-text header__text">Rainforest</h1>
-                <p class="rainforest-para header-para">Protecting tropical rainforest is a cost-effective and potent way to fight the climate crisis. All we have to do is protect it.</p>
+             changeColor('rainforest-image','enter')"
+                onmouseleave="toggleVisibility('default-image'), changeColor('rainforest-image','leave')"
+                class="rainforests rainforest__3--slide" id="rainforests">
+
+                <h1 class="rainforest-text header__text">RAINFORESTS</h1>
+                <p class="rainforest-para header-para">Protecting tropical rainforest is a cost-effective and potent way
+                    to fight the climate crisis. All we have to do is protect it.</p>
                 <i class="fas fa-angle-right fa-2x icon rainforest-icon"></i>
+
             </div>
-            </div>
-            <div onmouseenter="toggleVisibility('climate-image'), changeColor('climate-image','enter')" onmouseleave = "toggleVisibility('default-image'), changeColor('climate-image','leave')" class="climate__action rainforest__3--slide" id="climate">
-                <div class="text--wrapper">    
-                <h1 class="climate-action-text header__text">Climate Action</h1>
-                <p class="climate-action-para header-para">Cooling our Earth starts with people living in rainforest. We believe supporting indigenous peoples and local communities is the key to fighting the climate crisis and securing a future for all of us.</p>
+            <div onmouseenter="toggleVisibility('climate-image'), changeColor('climate-image','enter')"
+                onmouseleave="toggleVisibility('default-image'), changeColor('climate-image','leave')"
+                class="climate__action rainforest__3--slide" id="climate">
+
+                <h1 class="climate-action-text header__text">CLIMATE ACTION</h1>
+                <p class="climate-action-para header-para">Cooling our Earth starts with people living in rainforest. We
+                    believe supporting indigenous peoples and local communities is the key to fighting the climate
+                    crisis and securing a future for all of us.</p>
                 <i class="fas fa-angle-right fa-2x icon climate-icon"></i>
-                </div>
+
             </div>
         </div>
         </div>
     </section>
 
     <section id="key-stats">
-        <div class="row">
-        <h1>KEY STATS</h1>
-    </div>
+        <div id="pixel-to-watch"></div>
+
+        <h1 class="header--stats">KEY STATS</h1>
+        <div class="stats">
+
+            <div class="stat">
+                <div class="stats--wrapper">
+                    <h1 class="stats--header">105m</h1>
+
+                    <div class="subheader">
+                        Trees in our Partnerships
+                    </div>
+                    <p class="stats--para">Trees are our greatest natural carbon-storing technology in the fight
+                        against the climate crisis.
+                    </p>
+                    <button class="btn__rainforest">Our impact</button>
+                </div>
+            </div>
+
+            <div class="stat">
+                <div class="stats--wrapper">
+                    <h1 class="stats--header">40</h1>
+                    <div class="subheader">People-Powered Projects
+                    </div>
+                    <p class="stats--para">
+                        From the Amazon to New Guinea to the Congo Basin, communities all over the world are fighting
+                        deforestation.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="stat">
+                <div class="stats--wrapper">
+                    <h1 class="stats--header">48m </h1>
+                    <div class="subheader">Tonnes of Carbon Stored
+                    </div>
+                    <p class="stats--para">Carbon is being stored and kept out of the atmosphere in all of our
+                        partnerships in the Amazon, Congo and New Guinea rainforests.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
     </section>
 
     <section id="updates">
-     
+
+        <h1 class="updates--header">LATEST UPDATES</h1>
+
+        <p class="updates--para">Get all the latest news, stories and optimism direct from the rainforest right here.
+        </p>
+        <button class="updates--button">News and stories</button>
+
+        <div class="arrows">
+            <button class="left">
+                <img class="btn__img" src="https://www.coolearth.org/wp-content/themes/cool-earth/assets//svg/icons/chevron-circle.svg"
+                    alt="">
+            </button>
+
+            <button class="right">
+                <img class="btn__img" src="https://www.coolearth.org/wp-content/themes/cool-earth/assets//svg/icons/chevron-circle.svg"
+                    alt="">
+            </button>
+        </div>
+
     </section>
+    <footer>
+        <div class="footer__upper--container">
+            <div class="btn__container">
+            <button class="btn__dark">Donate</button>
+            <button class="btn__dark">Fundraise</button>
+            <button class="btn__dark">Take Action</button>
+        </div>
+        </div>
+
+        <div class="footer__gradient">
+            
+        </div>
+    </footer>
 
 </body>
+
 </html>
 <script src="main.js"></script>

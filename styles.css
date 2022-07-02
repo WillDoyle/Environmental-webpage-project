@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,300;0,400;0,700;1,900&display=swap');
 
-@font-face{
+@font-face {
     font-family: 'CompactaBT';
     src: url(./fonts/CompactaBT.ttf);
 }
 
-::selection{
+::selection {
     color: #2B443C;
     background: #CFFF4F
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -18,33 +19,40 @@
     scroll-behavior: smooth;
 }
 
-h1{
+h1 {
     font-family: 'CompactaBT';
     font-stretch: condensed;
     font-weight: 800;
 }
 
-html,body{
+h2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-stretch: condensed;
+    font-weight: 800;
+}
+
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
     letter-spacing: -0.1em;
-    
+
 }
 
 body {
     background-color: #242424;
 }
 
-.row{
+.row {
     margin: 0 10em;
     max-width: 1200px;
     display: flex;
     align-items: left;
-    flex-direction: column;   
+    flex-direction: column;
     padding: 2em 5em;
 }
 
-.row--cta{
+.row--cta {
     margin: 0 10em;
     max-width: 1200px;
     display: flex;
@@ -54,7 +62,7 @@ body {
     padding: 2em 5em;
 }
 
-.cta__row{
+.cta__row {
     max-width: 1800px;
     margin: 0em 10em;
     display: flex;
@@ -86,7 +94,7 @@ nav {
 .nav__link {
     padding: 12px 2em;
     list-style-type: none;
-    font-size: 2em;
+    font-size: 24px;
 }
 
 a {
@@ -98,16 +106,16 @@ a:active {
 }
 
 .donate {
-    padding: 0.5em 2em;
+    padding: 0.5em 4em;
     display: flex;
     align-items: center;
     border: 1px solid rgb(226, 52, 52);
     background-color: rgb(226, 52, 52);
     border-radius: 10em;
-    font-size: 2em;
+    font-size: 24px;
 }
 
-.donate:hover{
+.donate:hover {
     background-color: #b8e256;
     border: 1px solid #b8e256;
     color: black;
@@ -126,7 +134,7 @@ a:active {
         url('');
     background-size: cover;
     max-height: 100em;
-    height: 60em;
+    height: 50em;
     margin: 0;
     background-repeat: no-repeat;
     flex-wrap: wrap;
@@ -157,7 +165,7 @@ video {
     z-index: -1;
     object-position: center;
     object-fit: cover;
-  }
+}
 
 
 
@@ -170,7 +178,7 @@ button:active {
     z-index: 1;
 }
 
-.header__wrapper{
+.header__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -206,9 +214,13 @@ button:active {
     -webkit-text-stroke-color: rgb(171, 214, 171);
 }
 
-/* Call To Action Section */
+/* 
 
-#cta{
+Call To Action Section
+
+*/
+
+#cta {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -217,28 +229,26 @@ button:active {
     align-items: flex-start;
     height: 40em;
     padding: 0em 2em;
-    background-color:#2B443C;
+    background-color: #2B443C;
     word-wrap: break-word;
 }
 
-.cta__header--text{
+.cta__header--text {
     padding: 0em;
-    font-family: 'Be Vietnam Pro', san-serif;
     color: #CFFF4F;
     font-size: 3.5em;
     font-weight: 300;
 }
 
-.cta__header--bold{
-    font-family: 'Be Vietnam Pro', san-serif;
+.cta__header--bold {
     color: #86bd9e;
     text-decoration: underline;
 }
 
-.btn__rainforest{
+.btn__rainforest {
     max-width: 15em;
     min-width: 10em;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     margin: 1.5em 0em;
     font-size: 1.5em;
@@ -248,15 +258,19 @@ button:active {
     transition: all 200ms ease-in-out
 }
 
-button:hover{
+button:hover {
     background-color: #e25656;
     border: 1px solid #e25656;
     color: white;
 }
 
-/* Rainforest Section */
+/* 
 
-#rainforest{
+Rainforest Section
+
+*/
+
+#rainforest {
     height: 80em;
     max-height: 100%;
     max-width: 100%;
@@ -264,7 +278,7 @@ button:hover{
 }
 
 
-.rainforest__header--bar{
+.rainforest__header--bar {
     display: flex;
     align-items: center;
     height: 15em;
@@ -273,12 +287,12 @@ button:hover{
     background-color: #CFFF4F;
 }
 
-.rainforest__header--text{
+.rainforest__header--text {
     color: #2B443C;
     font-size: 7em;
 }
 
-#rainforest__3--sections{
+#rainforest__3--sections {
     display: flex;
     flex-direction: row;
     background-size: cover;
@@ -287,12 +301,14 @@ button:hover{
     z-index: 1;
 }
 
-.rainforest__3--slide:hover .icon{
-    transform: translateY(12em) rotate(45deg);
+.rainforest__3--slide:hover .icon {
+    transform: translateY(12em) rotate(90deg);
     transition: all 300ms ease-in-out;
 }
 
-.rainforest__3--slide .communities-para, .rainforest__3--slide .rainforest-para, .rainforest__3--slide .climate-action-para{
+.rainforest__3--slide .communities-para,
+.rainforest__3--slide .rainforest-para,
+.rainforest__3--slide .climate-action-para {
     opacity: 0;
     display: none;
 }
@@ -301,52 +317,55 @@ button:hover{
 
 
 
-.communities:hover{
+.communities:hover {
     background-color: #FF464F;
     width: 120vw;
 }
 
-.rainforests:hover{
+.rainforests:hover {
     background-color: #a0acf7;
     width: 120vw;
 }
 
-.climate__action:hover{
+.climate__action:hover {
     background-color: #d3f259;
     width: 120vw;
 }
 
 
-.rainforest__3--slide{
+
+.rainforest__3--slide {
     display: flex;
     padding: 7em 0em 0em 3em;
     flex-direction: column;
     max-width: 100%;
-    width: 100%;    
+    width: 100%;
     height: 65em;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border-right: 0.25rem solid #fff;
     width: (100% / 3);
     transition: all 300ms ease-in-out;
 }
 
-.icon{
+.icon {
     position: absolute;
-    top: 20%;
+    top: 25%;
     padding: 0.5em;
     text-align: center;
     color: black;
     background-color: white;
     border-radius: 50%;
     width: 2em;
-    height: 2em;  
-    transition: all 300ms ease-in-out;    
-    
+    height: 2em;
+    transition: all 300ms ease-in-out;
+
 }
 
 
 
-.rainforest__3--background{
+
+
+.rainforest__3--background {
     width: 100%;
     height: 100%;
     top: 0;
@@ -355,7 +374,7 @@ button:hover{
     z-index: -2;
 }
 
-.rainforest-3-background-image{
+.rainforest-3-background-image {
     transition: all 300ms ease-in-out;
     filter: brightness(50%);
     opacity: 1;
@@ -370,7 +389,7 @@ button:hover{
 }
 
 
-.rainforest-3-background-image img{
+.rainforest-3-background-image img {
     opacity: 1;
     margin: 0;
     width: 100%;
@@ -380,42 +399,234 @@ button:hover{
 
 }
 
-.rainforest__3--slide h1{
+.rainforest__3--slide h1 {
     font-size: 5em;
+    margin: 0.2em 26px;
 }
 
-.communities-text{
+.communities-text {
     font-weight: 100;
 }
 
-.communities-para, .climate-action-para, .rainforest-para{
+.communities-para,
+.climate-action-para,
+.rainforest-para {
+    display: flex;
+    width: 400px;
     opacity: 0;
     transition: 300ms ease-in;
-    padding: 2em 4em 2em 0em;
     font-size: 1.8em;
 }
 
+.communities-para {
+    padding: 0;
+}
 
-/* KEY STATS SECTION */
 
-#key-stats{
+/* 
+
+KEY STATS SECTION
+
+*/
+
+#pixel-to-watch {
+    position: relative;
+    width: 1px;
+    height: 1px;
+    top: -400px;
+    left: 0;
+}
+
+#key-stats {
     background-color: #2B443C;
-    height: 200em;
+    height: 1400px;
+    padding: 2em 10em;
 }
 
 
-#updates{
-    background-color: #FDF2CD;
-    height: 200em;
-}
-
-#key-stats h1{
+.header--stats {
     margin-top: 36px;
-    font-size: 12em;
+    margin-bottom: 128px;
+    font-size: 10em;
 }
 
-@media (max-width: 999px){
-    #header{
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    min-width: 1100px;
+}
+
+.stats--header {
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    color: #CFFF4F;
+    margin: 0em 256px 0em 0em;
+    font-size: 14em;
+
+}
+
+.stats--wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-right: 128px;
+
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+
+}
+
+
+
+.subheader {
+    font-size: 2em;
+    margin-bottom: 1em;
+    font-weight: 700;
+}
+
+.stats--para {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+
+/* 
+
+LATEST UPDATES SECTION
+
+*/
+
+#updates {
+    background-color: #FDF2CD;
+    height: 100em;
+    padding: 3em 10em;
+}
+
+.updates--header {
+    font-size: 10em;
+    color: #2B443C;
+}
+
+.updates--button {
+    font-size: 24px;
+    background: transparent;
+    color: #2B443C;
+    border-radius: 50px;
+    padding: 1em 4em;
+    border: 2px solid #2B443C;
+}
+
+.updates--button:hover {
+    background: #2B443C;
+    color: #CFFF4F;
+    border: 1px;
+    border: 2px solid #2B443C;
+}
+
+.updates--para {
+    font-size: 32px;
+    color: #2B443C;
+    margin: 2em 0em;
+}
+
+.left {
+    background: transparent;
+    color: #333;
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    margin-right: 48px;
+    transform: rotate(180deg);
+}
+
+.right {
+    background: transparent;
+    color: #333;
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.right:active {
+    background-color: #2B443C;
+    color: #CFFF4F;
+}
+
+.left:active {
+    background-color: #2B443C;
+    color: #CFFF4F;
+    transform: translateY(-1px) rotate(180deg);
+}
+
+.right:hover {
+    color: rgb(0, 0, 0);
+    border: none;
+    background: transparent;
+}
+
+.left:hover {
+    color: rgb(0, 0, 0);
+    border: none;
+    background: transparent;
+}
+
+.arrows {
+    margin: 4em 0em;
+}
+
+.btn__img{
+    border: none;
+    width: 100%;
+    transition: all 200ms ease-in-out;
+}
+
+.btn__img:active{
+    transform: scale(1.2);
+    transition: all 200ms ease-in-out;
+}
+
+
+/* 
+
+FOOTER
+
+*/
+
+.footer__upper--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;   
+    background: rgb(159, 172, 248);
+    height: 20em;
+
+}
+
+
+
+.btn__dark{
+    background: rgb(43, 68, 60);
+    color: #fff;
+    border-radius: 50px;
+    padding: 2rem 8rem;
+    font: 400;
+    font-size: 22px;
+    border: none;
+    margin: 0rem 2rem;
+}
+
+
+
+@media (max-width: 999px) {
+    #header {
         display: flex;
         flex-wrap: wrap;
         align-items: left;
@@ -425,7 +636,7 @@ button:hover{
         margin: 2em 0em;
     }
 
-    .row{
+    .row {
         padding: 0;
         margin: 0 2em;
 
@@ -436,12 +647,14 @@ button:hover{
 
 
 
+
+
 @media (max-width: 768px) {
     #header {
         background-size: cover;
     }
 
-    .rainforest__3--sections{
+    .rainforest__3--sections {
         display: flex;
         flex-direction: column;
         border-right: 0.125rem solid #fff;
@@ -454,15 +667,15 @@ button:hover{
         font-size: 1em;
     }
 
-    #cta{
+    #cta {
         height: 18em;
     }
-    
-    .cta__header--text{
+
+    .cta__header--text {
         font-size: 1.5em;
     }
 
-    .btn_rainforest{
+    .btn_rainforest {
         font-size: 1em;
     }
 }
